@@ -1,0 +1,62 @@
+/*setting custom variables to make replacing properties easier*/
+:root {
+    --main-color: #bc5a45;
+    --base-color: #b2b2b2;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+/*removing default browser style*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*declaring font for whole page*/
+body {
+    font-family: var(--font-family);
+}
+/*style for the whole header banner*/
+header {
+  height: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--base-color);
+  padding: 10px 0;
+  align-items: center;
+  position: sticky;
+  z-index: 9999;
+}
+/*Name title style*/
+header h1 {
+  font-size: 70px;
+  font-weight: 500;
+  background-color: var(--main-color);
+  padding-left: 70px;
+  height: 90%;
+  width: 29%;
+}
+/*style for navigation bar*/
+header nav {
+    margin-right: 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li {
+  font-size: 1.50vw;
+  margin: 0px 25px;
+  padding: 0 7px;
+  border-bottom: 3px solid var(--main-color);
+  
+}
+
+header a {
+  text-decoration: none;
+  color: #bc5a45;
+}
