@@ -78,13 +78,71 @@ header a {
 }
 /*hero subtitle*/
 .header-subtitle {
-    margin: 8%;
-    background-color: var(--main-color);
-    
-    padding: 15px;
+  margin: 8%;
+  background-color: var(--main-color);
+
+  padding: 15px;
 }
 
 .header-subtitle h3 {
-    font-size: 45px;
-    font-weight: 500;
+  font-size: 45px;
+  font-weight: 500;
 }
+
+/*-----ABOUT SECTION-----*/
+.about {
+  display: flex;
+}
+
+/*Side title style for all sections*/
+.side-title {
+  width: 100px;
+  height: 525px;
+  background-color: ;
+  border-right: 2px solid var(--main-color);
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+/*-----PROJECTS SECTION*-----*/
+
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card {
+    background-color: green;
+    width: 260px;
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#proj2, #proj3 {
+    background-color: yellow;
+    width: 125px;
+    height: 125px;
+    margin-right: 10px;
+    position: relative;
+}
+
+#proj4, #proj5 {
+    background-color: orange;
+    width: 125px;
+    height: 125px;
+    position: relative;
+}
+
+
+/*-----CONTACT SECTION-----*/
+.contact {
+    display: flex;
+  }
+  
+  .contact-links ul {
+    display: flex;
+  }
+
