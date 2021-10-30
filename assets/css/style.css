@@ -1,8 +1,8 @@
 /*setting custom variables to make replacing properties easier*/
 :root {
-    --main-color: #bc5a45;
-    --base-color: #b2b2b2;
-    --font-family: Arial, Helvetica, sans-serif;
+  --main-color: #bc5a45;
+  --base-color: #f1e3dd;
+  --font-family: Arial, Helvetica, sans-serif;
 }
 
 /*removing default browser style*/
@@ -12,8 +12,10 @@
 }
 /*declaring font for whole page*/
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
+
+/*-----HEADER SECTION----*/
 /*style for the whole header banner*/
 header {
   height: 35%;
@@ -37,26 +39,52 @@ header h1 {
 }
 /*style for navigation bar*/
 header nav {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
 
 header nav ul li {
-  font-size: 1.50vw;
+  font-size: 1.5vw;
   margin: 0px 25px;
   padding: 0 7px;
   border-bottom: 3px solid var(--main-color);
-  
 }
 
 header a {
   text-decoration: none;
   color: #bc5a45;
+}
+/*-----HERO SECTION----*/
+
+/*hero image style*/
+.hero {
+  background-image: url(https://previews.123rf.com/images/katrinshine/katrinshine1908/katrinshine190800030/128813234-tropical-monstera-and-palm-leaves-on-a-wooden-background-top-view.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+  height: 300px;
+}
+/*hero subtitle*/
+.header-subtitle {
+    margin: 8%;
+    background-color: var(--main-color);
+    
+    padding: 15px;
+}
+
+.header-subtitle h3 {
+    font-size: 45px;
+    font-weight: 500;
 }
