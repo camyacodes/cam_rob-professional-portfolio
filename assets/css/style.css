@@ -7,9 +7,11 @@
 
 /*removing default browser style*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 /*declaring font for whole page*/
 body {
   font-family: var(--font-family);
@@ -19,6 +21,7 @@ body {
 /*style for the whole header banner*/
 header {
   height: 35%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -92,10 +95,13 @@ header a {
 }
 
 .content {
-  max-width: 960px;
   margin: auto;
   color: var(--main-color);
   padding-top: 25px;
+}
+
+.content, .hero {
+  scroll-margin-top: 1em;
 }
 
 /*-----ABOUT SECTION-----*/
@@ -110,7 +116,7 @@ header a {
 }
 
 #about-content {
-  width: 70%;
+  width: 50%;
   line-height: 1.5;
 }
 
@@ -244,7 +250,7 @@ header a {
 }
 
 .contact-links {
-  width: 70%;
+  width: 50%;
   height: 150px;
   padding-top: 55px;
 }
@@ -252,7 +258,7 @@ header a {
 .contact-links ul {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   font-size: 20px;
 }
@@ -260,4 +266,59 @@ header a {
 .contact-links ul li a {
   text-decoration: underline;
   color: var(--main-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  
+  header {
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  header nav {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  header nav ul {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 23px;
+  }
+
+  .header-subtitle {
+    text-align: center;
+  }
+
+  .contact-links {
+    width: 75%;
+  }
+
+
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header h1 {
+    width: 100%;
+  }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header {
+    width: 100%;
+  }
 }
