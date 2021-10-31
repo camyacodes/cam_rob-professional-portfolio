@@ -21,7 +21,6 @@ body {
 /*style for the whole header banner*/
 header {
   height: 35%;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,17 +34,13 @@ header {
 }
 /*Name title style*/
 header h1 {
-  font-size: 70px;
+  font-size: 6vh;
   font-weight: 500;
   background-color: var(--main-color);
   padding-left: 70px;
   height: 90%;
-  width: 29%;
 }
 /*style for navigation bar*/
-header nav {
-  margin-right: 30px;
-}
 
 header nav ul {
   display: flex;
@@ -310,22 +305,24 @@ header a {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
 
+
+
 .side-title {
   width: 12%;
   font-size: 12px;
 }  
 
 #about-content {
-  width: 80%;
+  width: 60%;
 }
 
 #proj1 {
-  width: 80%;
+  width: 70%;
   margin-right: 0;
 }
 
 .small-card {
-  width: 39.3%;
+  width: 34.5%;
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -333,4 +330,56 @@ header a {
   header {
     width: 100%;
   }
+
+  header nav ul {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about .side-title {
+    height: 240px;
+  }
+
+  .work .side-title {
+    height: 1255px;
+  }
+
+  .cards {
+    width: 80%;
+  }
+
+ #proj1 {
+   width: 100%;
+ }
+
+  .small-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-card {
+    width: 71.5%;
+  }
+
+#proj2,
+#proj4 {
+  margin-right: 0;
+}
+
+.side-title {
+  font-size: 11px;
+}
+
+.contact-links ul li {
+ font-size: 16px;
+}
+
 }
