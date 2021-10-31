@@ -89,60 +89,96 @@ header a {
   font-weight: 500;
 }
 
+.content {
+  max-width: 960px;
+  margin: auto;
+  color: #bc5a45;
+  padding-top: 25px;
+}
+
 /*-----ABOUT SECTION-----*/
 .about {
   display: flex;
+  margin-bottom: 50px;
+}
+
+#about-content {
+  width: 85%;
+  line-height: 1.5;
 }
 
 /*Side title style for all sections*/
 .side-title {
-  width: 100px;
+  width: 200px;
   height: 525px;
-  background-color: ;
   border-right: 2px solid var(--main-color);
   margin-right: 20px;
-  padding-left: 30px;
   padding-right: 10px;
   text-align: right;
+  font-size: 30px;
 }
 
 /*-----PROJECTS SECTION*-----*/
 
 .work {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.work .side-title {
+  height: 1000px;
+}
+
+.cards {
+  display: flex-column;
 }
 
 .big-card {
-    background-color: green;
-    width: 260px;
-    height: 250px;
-    margin-bottom: 15px;
-    position: relative;
+  background-color: green;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
-#proj2, #proj3 {
-    background-color: yellow;
-    width: 125px;
-    height: 125px;
-    margin-right: 10px;
-    position: relative;
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-#proj4, #proj5 {
-    background-color: orange;
-    width: 125px;
-    height: 125px;
-    position: relative;
+.small-card {
+  width: 49.15%;
+  height: 100vh;
+  margin-bottom: 10px;
 }
 
+#proj2,
+#proj4 {
+  background-color: yellow;
+  margin-right: 10px;
+  position: relative;
+}
+
+#proj3,
+#proj5 {
+  background-color: orange;
+  position: relative;
+}
 
 /*-----CONTACT SECTION-----*/
 .contact {
-    display: flex;
-  }
-  
-  .contact-links ul {
-    display: flex;
-  }
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
 
+.contact-links ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.contact-links ul li {
+  justify-content: space-evenly;
+}
