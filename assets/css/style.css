@@ -309,12 +309,24 @@ header a {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-  }
-  header h1 {
-    width: 100%;
-  }
+
+.side-title {
+  width: 12%;
+  font-size: 12px;
+}  
+
+#about-content {
+  width: 80%;
+}
+
+#proj1 {
+  width: 80%;
+  margin-right: 0;
+}
+
+.small-card {
+  width: 39.3%;
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
