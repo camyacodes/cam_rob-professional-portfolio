@@ -25,7 +25,9 @@ header {
   background-color: var(--base-color);
   padding: 10px 0;
   align-items: center;
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
   z-index: 9999;
 }
 /*Name title style*/
@@ -78,14 +80,14 @@ header a {
 }
 /*hero subtitle*/
 .header-subtitle {
-  margin: 8%;
+  margin: 8% 0px;
   background-color: var(--main-color);
-
   padding: 15px;
+  font-style: italic;
 }
 
 .header-subtitle h3 {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -99,12 +101,12 @@ header a {
 /*-----ABOUT SECTION-----*/
 .about {
   display: flex;
-  height: 250px;
+  height: 200px;
   margin-bottom: 50px;
 }
 
 .about .side-title {
-  height: 250px;
+  height: 200px;
 }
 
 #about-content {
@@ -124,27 +126,30 @@ header a {
 }
 
 /*-----PROJECTS SECTION*-----*/
-
+/*Add flex box to the whole section*/
 .work {
   display: flex;
   margin-bottom: 50px;
 }
 
+/*style side title*/
 .work .side-title {
-  height: 1000px;
+  height: 840px;
 }
-
+/*Adding flex box to all of the cards*/
 .cards {
   display: flex-column;
 }
-
+/*Styling big card and label*/
 .big-card {
-  background-color: green;
+  background-image: url("../images/website1.jpg");
+  background-size: cover;
   width: 100%;
   height: 400px;
   border: 2px solid var(--main-color);
   margin-bottom: 15px;
   position: relative;
+  opacity: 0.5;
 }
 
 .big-card-label {
@@ -157,21 +162,22 @@ header a {
   padding-top: 10px;
   padding-left: 5px;
 }
-
+/*Adding flex box to the small cards section to make it 2x2*/
 .small-cards {
   display: flex;
   flex-wrap: wrap;
   width: 644px;
   margin: 0;
 }
-
+/*Styling each box and label*/
 .small-card {
   width: 310px;
   height: 200px;
   margin-bottom: 10px;
-  
+  opacity: 0.5;
 }
- .small-card-label {
+
+.small-card-label {
   width: 130px;
   height: 75px;
   background-color: var(--base-color);
@@ -180,11 +186,11 @@ header a {
   font-size: 18px;
   padding-top: 10px;
   padding-left: 5px;
- }
+}
 
+/*Adding border and margin to the cards*/
 #proj2,
 #proj4 {
-  background-color: yellow;
   margin-right: 10px;
   border: 2px solid var(--main-color);
   position: relative;
@@ -193,8 +199,36 @@ header a {
 #proj3,
 #proj5 {
   border: 2px solid var(--main-color);
-  background-color: orange;
   position: relative;
+}
+/*Adding each individual project image*/
+#proj2 {
+  background-image: url("../images/website2.jpg");
+  background-size: cover;
+}
+
+#proj3 {
+  background-image: url("../images/website3.jpg");
+  background-size: cover;
+}
+
+#proj4 {
+  background-image: url("../images/website4.jpg");
+  background-size: cover;
+}
+
+#proj5 {
+  background-image: url("../images/website5.jpg");
+  background-size: cover;
+}
+
+/*hover effect on cards*/
+.big-card:hover {
+  opacity: 1;
+}
+
+.small-card:hover {
+  opacity: 1;
 }
 
 /*-----CONTACT SECTION-----*/
@@ -210,9 +244,9 @@ header a {
 }
 
 .contact-links {
-    width: 70%;
-    height: 150px;
-    padding-top: 55px;
+  width: 70%;
+  height: 150px;
+  padding-top: 55px;
 }
 
 .contact-links ul {
@@ -220,9 +254,10 @@ header a {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  font-size: 20px;
 }
 
 .contact-links ul li a {
   text-decoration: underline;
   color: var(--main-color);
-} 
+}
