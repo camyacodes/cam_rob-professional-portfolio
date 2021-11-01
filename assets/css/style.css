@@ -305,24 +305,26 @@ header a {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
 
-
-
 .side-title {
   width: 12%;
   font-size: 12px;
 }  
 
 #about-content {
-  width: 60%;
+  width: 70%;
+}
+
+.small-cards {
+  width: 450px;
 }
 
 #proj1 {
-  width: 70%;
+  width: 92.3%;
   margin-right: 0;
 }
 
 .small-card {
-  width: 34.5%;
+  width: 45%;
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -339,7 +341,10 @@ header a {
   header nav ul li a {
     font-size: 20px;
   }
-
+  .about p{
+    font-size: 3vw;
+    width: 100;
+  }
   .about {
     margin-bottom: 50px;
   }
