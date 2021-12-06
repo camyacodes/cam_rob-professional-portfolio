@@ -133,6 +133,10 @@ header a {
   margin-bottom: 50px;
 }
 
+.work a {
+  color: var(--main-color);
+}
+
 /*style side title*/
 .work .side-title {
   height: 840px;
@@ -180,10 +184,10 @@ header a {
 
 .small-card-label {
   width: 130px;
-  height: 75px;
+  height: 95px;
   background-color: var(--base-color);
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   font-size: 18px;
   padding-top: 10px;
   padding-left: 5px;
@@ -209,7 +213,7 @@ header a {
 }
 
 #proj3 {
-  background-image: url("../images/website3.jpg");
+  background-image: url("https://user-images.githubusercontent.com/87587644/144774029-b5fcad2f-29f0-4784-8307-d95e7a711c3e.png");
   background-size: cover;
 }
 
@@ -387,4 +391,5 @@ header a {
  font-size: 16px;
 }
 
+}
 }
